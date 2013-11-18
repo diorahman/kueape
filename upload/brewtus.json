@@ -1,0 +1,9 @@
+{
+	"host":"localhost",
+	"port":3002, 
+	"server": "CumiCumiTus[BrewTus+toppings]/1.0",
+	"files":"files",
+	"logDir": "logs",
+	"logRotateSize": 10485760,
+	"logLevel": "info"
+}

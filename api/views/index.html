@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Biddings</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <script src="js/vendor/custom.modernizr.js"></script>
+</head>
+<body>
+  <div class="row">
+    <h1>Biddings</h1>
+  </div>
+  <div class="row">
+    <table>
+      <thead>
+        <tr>
+          <th width="50">#</th>
+          <th>Title</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#biddings}}
+        <tr>
+          <td>{{idx}}</td>
+          <td><a href="/bid?key={{id}}&title={{title}}">{{title}}</a></td>
+          <td>{{desc}}</td>
+        </tr>
+        {{/biddings}}
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
